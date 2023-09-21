@@ -39,12 +39,21 @@ constructor (
 
 
   ngOnInit(): void {
-     // vamos usar nossa variavel service que traz a classe do nosso serviço
+    // pokemon inicial
+    this.getPokemon ('pikachu');
+  }
+
+  // retiramos todo codigo para trazer dentro do nosso metodo de pesquisa
+
+  getPokemon (searchName: string) {
+ // vamos usar nossa variavel service que traz a classe do nosso serviço
      // quando colocamos o nome , automaticamente o console.log que esta na nossa função em service
      // vai mostrar o dado que trazemos aqui pela nossa varivel
      // vamos trazer agora o metodo subscribe
 
-     this.service.getPokemon ("pikachu").subscribe ({
+
+     // vamos add o nossa variavel como parametro
+     this.service.getPokemon (searchName).subscribe ({
       // vamos trabalhar agora o valor da resposta pelo next que dara uma resposta quando der certo
       // error: quando der errado a mesma coisa
 

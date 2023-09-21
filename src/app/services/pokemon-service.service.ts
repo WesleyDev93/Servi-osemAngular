@@ -37,7 +37,7 @@ export class PokemonServiceService {
   ) {
 
     // vamos trazer a variavel que carrega a URL da API para cá que esta em environments
-    this.baseURL  = environment.pokeApi
+    this.baseURL = environment.pokeApi
 
   }
 
