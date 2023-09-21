@@ -1,9 +1,56 @@
 
 .card {
-
+  background-color: #232323;
   border: 1px solid black;
+  border-radius: 13px;
   display: flex;
   flex-direction: column;
   height: 350px;
   width: 200px;
+}
+
+
+
+.card__title {
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.card__title > h1 {
+
+  color: white;
+
+}
+
+
+.card__body {
+
+  background-color: #616161;
+  height: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+
+
+.card__status {
+
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   padding-top: 10px;
+}
+
+
+.card__status__type {
+
+  background-color: coral;
+  border-radius: 5px;
+   color: white;
+   margin-right: 5px;
+   padding: 5px;
+
+
 }
