@@ -17,7 +17,7 @@
 
   <div class="card__status">
 
-    <span  *ngFor="let type of tipos" class="card__status__type">{{type}}</span>
+    <span  *ngFor="let t of pokemon.types" class="card__status__type">{{t.type.name}}</span>
 
   </div>
 

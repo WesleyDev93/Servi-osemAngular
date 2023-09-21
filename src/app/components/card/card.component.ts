@@ -12,19 +12,30 @@ import { PokemonServiceService } from 'src/app/services/pokemon-service.service'
 export class CardComponent implements OnInit {
 
 
-  // variaveis de dados
 
-  tipos: string[] = ['Fire', 'Rock'];
 
   // Criando Pokemon para receber o tipo pokemonData
-  pokemon:pokemonData | any;
+  //  vamos tipar nossa variavel agora montando ela no construtor
+  pokemon:pokemonData ;
 
 
 constructor (
     // vamos chamar nosso service
     private service: PokemonServiceService
 
-) {}
+) { // aqui nos contruimos nosso objeto
+  this.pokemon  = {
+
+    id:0,
+    name: '',
+    sprites: {
+
+      front_default:''
+    },
+    types: [],
+
+  }
+}
 
 
   ngOnInit(): void {
@@ -33,7 +44,7 @@ constructor (
      // vai mostrar o dado que trazemos aqui pela nossa varivel
      // vamos trazer agora o metodo subscribe
 
-     this.service.getPokemon ("ditto").subscribe ({
+     this.service.getPokemon ("pikachu").subscribe ({
       // vamos trabalhar agora o valor da resposta pelo next que dara uma resposta quando der certo
       // error: quando der errado a mesma coisa
 

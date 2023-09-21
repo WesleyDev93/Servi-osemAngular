@@ -11,6 +11,14 @@ export type pokemonData = {
 
     front_default: string;
   }
+/// vamos transformar o array em objeto
+  types: {
 
-  types:[],
+    slot: number;
+    type: {
+      name: string;
+      url: string;
+    }
+
+  }[],
 }

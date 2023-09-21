@@ -10,6 +10,7 @@ import { environment } from 'src/environments/environment';
 
 import {pokemonData} from 'src/app/models/pokemonData';
 
+
 // injectable é como uma Injeção de dados , podemos utilizar ele dentro do nosso constructor
 // podemos injetar ele diretamento em um modulo , colocar a classe em PROVIDERS:[]
 @Injectable({
@@ -56,5 +57,6 @@ export class PokemonServiceService {
     // vamos tipar nosso get tambem com pokemonData atraves de <>
    this.pokeData =  this.http.get <pokemonData>(`${this.baseURL}${pokemonName}`)
    return this.pokeData;
+
   }
 }
