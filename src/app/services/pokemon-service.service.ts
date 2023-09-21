@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 
 // Importar nosso enviroment
 
-import { environment } from 'src/environments/environment';
+import { environment } from 'src/environments/environment.development';
 
 // importar nosso pokemon data
 
