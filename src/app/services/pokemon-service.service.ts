@@ -13,4 +13,12 @@ import { Injectable } from '@angular/core';
 export class PokemonServiceService {
 
   constructor() { }
+
+
+  // Criar os metodos pela função
+
+  getPokemon (pokemonName: string) {
+     console.log (pokemonName)
+
+  }
 }
