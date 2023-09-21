@@ -5,7 +5,7 @@
 
   <div class="card__title">
 
-    <h1>Pokemon</h1>
+    <h1>{{name}}</h1>
 
   </div>
 
@@ -17,7 +17,7 @@
 
   <div class="card__status">
 
-    <span class="card__status__type">Status</span>
+    <span  *ngFor="let type of tipos" class="card__status__type">{{type}}</span>
 
   </div>
 
